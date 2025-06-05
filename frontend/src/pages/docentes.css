@@ -1,0 +1,134 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f7f7f7, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.docentes-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-bar h2 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-regresar {
+  background-color: #111;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-regresar:hover {
+  background-color: #333;
+}
+
+.tabla-docentes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.tabla-docentes th,
+.tabla-docentes td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.tabla-docentes thead {
+  background-color: #111;
+  color: white;
+}
+
+.tabla-docentes tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.acciones button {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.acciones button:hover {
+  background-color: #333;
+}
+
+h3 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.form-docente {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-docente input {
+  flex: 1 1 200px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-docente button {
+  background-color: #111;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-docente button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .form-docente {
+    flex-direction: column;
+  }
+
+  .acciones {
+    flex-direction: column;
+  }
+}
